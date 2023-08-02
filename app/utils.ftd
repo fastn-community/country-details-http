@@ -27,6 +27,10 @@ string link:
 
 window.open(link)
 
+-- void go-back():
+
+window.history.go(-1)
+
 ;; -- country-models.Country get-country-at-index(countries,index):
 ;; country-models.Country list countries:
 ;; integer index:

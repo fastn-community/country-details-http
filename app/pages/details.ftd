@@ -16,7 +16,7 @@ $processor$: pr.request-data
 $processor$: pr.http
 url: $url
 
-;; -- country-models.Country country: $Utility.get-country-at-index(countries = $countries, index = 0)
+-- country-models.Country country: $Utility.get-country-at-index(countries = $countries, index = 0)
 
 -- ftd.document: Details
 
@@ -25,7 +25,6 @@ url: $url
 -- layout.header:
 
 -- cd.country-details: $country
-for: $country in $countries
 
 -- end: layout.main
 

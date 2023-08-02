@@ -20,19 +20,14 @@ integer a:
 -- void open-country-page(country):
 string country:
 
-window.open("/country/" + country)
-
--- void open(link):
-string link:
-
-window.open(link)
+ftd.http("/country/" + country, "get")
 
 -- void go-back():
 
 window.history.go(-1)
 
-;; -- country-models.Country get-country-at-index(countries,index):
-;; country-models.Country list countries:
-;; integer index:
+-- country-models.Country get-country-at-index(countries,index):
+country-models.Country list countries:
+integer index:
 
-;; countries.at(index)
+ftd.get(countries, index)

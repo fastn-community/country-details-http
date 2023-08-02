@@ -13,6 +13,10 @@ optional country-native-name-eng eng:
 string png:
 string svg:
 
+;; this is the model for the "country" objects
+;; we will use it to map the details retrieved from the API in json format to the one we can use in fastn
+;; ---- the property names should be same as in the json response
+
 -- record country:
 country-name name:
 integer population:

@@ -1,7 +1,7 @@
--- import: fastn-country-code-example/app/models/country as country-models
--- import: fastn-country-code-example/app/components/card
+-- import: country-details-http/app/models/country as country-models
+-- import: country-details-http/app/components/card
 -- import: fastn/processors as pr
--- import: fastn-country-code-example/app/components/layout
+-- import: country-details-http/app/components/layout
 
 -- country-models.country list countries:
 $processor$: pr.http

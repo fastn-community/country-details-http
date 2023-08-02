@@ -1,4 +1,4 @@
--- import: fastn-country-code-example/app/models/country as country-models
+-- import: country-details-http/app/models/country as country-models
 
 -- string join(a,b):
 string a:

@@ -1,8 +1,8 @@
 -- import: fastn/processors as pr
--- import: fastn-country-code-example/app/models/country as country-models
--- import: fastn-country-code-example/app/utils as utility
--- import: fastn-country-code-example/app/components/country-details as cd
--- import: fastn-country-code-example/app/components/layout
+-- import: country-details-http/app/models/country as country-models
+-- import: country-details-http/app/utils as utility
+-- import: country-details-http/app/components/country-details as cd
+-- import: country-details-http/app/components/layout
 
 -- record r-data:
 string cca2:

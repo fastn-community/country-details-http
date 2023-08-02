@@ -1,6 +1,6 @@
--- import: fastn-country-code-example/app/models/country as country-models
--- import: fastn-country-code-example/app/styles/shadow as shadow
--- import: fastn-country-code-example/app/utils as utility
+-- import: country-details-http/app/models/country as country-models
+-- import: country-details-http/app/styles/shadow as shadow
+-- import: country-details-http/app/utils as utility
 
 -- component country-card:
 caption country-models.country country:

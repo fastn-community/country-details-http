@@ -1,4 +1,4 @@
--- import: fastn-country-code-example/app/styles/shadow
+-- import: country-details-http/app/styles/shadow
 
 -- component main:
 children sections:

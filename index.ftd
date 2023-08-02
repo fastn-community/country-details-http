@@ -1,4 +1,4 @@
--- import: fastn-country-code-example/app/pages/home
+-- import: country-details-http/app/pages/home
 
 -- ftd.document: Where in the world?
 

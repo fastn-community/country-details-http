@@ -2,6 +2,8 @@
 
 -- fastn.package: country-details-http
 
+;; ---- Dynamic url for the country details page
+
 -- fastn.dynamic-urls:
 
 # Country Details Page

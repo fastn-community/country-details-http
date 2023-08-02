@@ -60,7 +60,7 @@ $on-click$: $utility.go-back()
 ;; ------- COUNTRY DETAILS COMPONENT
 
 -- component country-details:
-caption country-models.Country country:
+caption country-models.country country:
 
 -- ftd.column:
 spacing.fixed.rem: 4

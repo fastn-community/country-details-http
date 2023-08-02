@@ -26,8 +26,8 @@ ftd.http("/country/" + country, "get")
 
 window.history.go(-1)
 
--- country-models.Country get-country-at-index(countries,index):
-country-models.Country list countries:
+-- country-models.country get-country-at-index(countries,index):
+country-models.country list countries:
 integer index:
 
 ftd.get(countries, index)

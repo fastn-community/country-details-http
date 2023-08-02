@@ -1,22 +1,22 @@
--- import: fastn-country-code-example/app/models/country as Country
--- import: fastn-country-code-example/app/styles/shadow as Shadow
--- import: fastn-country-code-example/app/utils as Utility
+-- import: fastn-country-code-example/app/models/country as country-models
+-- import: fastn-country-code-example/app/styles/shadow as shadow
+-- import: fastn-country-code-example/app/utils as utility
 
--- component CountryCard:
-caption Country.Country country:
+-- component country-card:
+caption country-models.country country:
 
 -- ftd.column:
 width.fixed.px: 260
 height.fixed.px: 320
-shadow: $Shadow.card-shadow
+shadow: $shadow.card-shadow
 overflow: auto
 border-radius.rem: 0.5
 margin.rem: 2
 cursor: pointer
-$on-click$: $Utility.open-country-page(country = $CountryCard.country.cca2)
+$on-click$: $utility.open-country-page(country = $country-card.country.cca2)
 
 -- ftd.image:
-src: $CountryCard.country.flags.svg
+src: $country-card.country.flags.svg
 width: fill-container
 height.fixed.percent: 50
 
@@ -24,7 +24,7 @@ height.fixed.percent: 50
 padding.rem: 1
 spacing.fixed.rem: 0.5
 
--- ftd.text: $CountryCard.country.name.common
+-- ftd.text: $country-card.country.name.common
 style: bold
 role: $inherited.types.copy-regular
 
@@ -51,16 +51,16 @@ role: $inherited.types.label-large
 -- ftd.column:
 spacing.fixed.rem: 0.5
 
--- ftd.integer: $CountryCard.country.population
+-- ftd.integer: $country-card.country.population
 role: $inherited.types.label-large
 
--- ftd.text: $CountryCard.country.region
+-- ftd.text: $country-card.country.region
 role: $inherited.types.label-large
 
 -- ftd.text: $capital-name
 style: bold
 role: $inherited.types.label-large
-for: $capital-name, $index in $CountryCard.country.capital
+for: $capital-name, $index in $country-card.country.capital
 
 -- end: ftd.column
 
@@ -70,4 +70,4 @@ for: $capital-name, $index in $CountryCard.country.capital
 
 -- end: ftd.column
 
--- end: CountryCard
+-- end: country-card

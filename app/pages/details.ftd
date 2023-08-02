@@ -1,6 +1,6 @@
 -- import: fastn/processors as pr
 -- import: fastn-country-code-example/app/models/country as country-models
--- import: fastn-country-code-example/app/utils as Utility
+-- import: fastn-country-code-example/app/utils as utility
 -- import: fastn-country-code-example/app/components/country-details as cd
 -- import: fastn-country-code-example/app/components/layout
 
@@ -10,13 +10,13 @@ string cca2:
 -- r-data data:
 $processor$: pr.request-data
 
--- string url: $Utility.join(a = https://restcountries.com/v3.1/alpha/, b = $data.cca2)
+-- string url: $utility.join(a = https://restcountries.com/v3.1/alpha/, b = $data.cca2)
 
--- country-models.Country list countries:
+-- country-models.country list countries:
 $processor$: pr.http
 url: $url
 
--- country-models.Country country: $Utility.get-country-at-index(countries = $countries, index = 0)
+-- country-models.country country: $utility.get-country-at-index(countries = $countries, index = 0)
 
 -- ftd.document: $country.name.official
 

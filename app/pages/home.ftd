@@ -3,7 +3,7 @@
 -- import: fastn/processors as pr
 -- import: fastn-country-code-example/app/components/layout
 
--- country-models.Country list countries:
+-- country-models.country list countries:
 $processor$: pr.http
 url: https://restcountries.com/v3.1/all
 
@@ -25,7 +25,7 @@ spacing: space-around
 padding.rem: 2
 border-radius.rem: 1
 
--- card.CountryCard: $country
+-- card.country-card: $country
 for: $country in $countries
 
 -- end: ftd.row

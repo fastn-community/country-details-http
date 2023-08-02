@@ -1,0 +1,8 @@
+-- import: fastn-country-code-example/app/models/country as country-models
+
+-- component country-details:
+caption country-models.Country country:
+
+-- ftd.text: $country-details.country.name.official
+
+-- end: country-details

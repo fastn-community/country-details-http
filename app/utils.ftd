@@ -1,4 +1,23 @@
--- string format-population(population):
-integer population:
+-- import: fastn-country-code-example/app/models/country as country-models
 
-"Population: " + population
+-- string join(a,b):
+string a:
+string b:
+
+a + b
+
+-- void open-country-page(country):
+string country:
+
+window.open("/country/" + country)
+
+-- void open(link):
+string link:
+
+window.open(link)
+
+;; -- country-models.Country get-country-at-index(countries,index):
+;; country-models.Country list countries:
+;; integer index:
+
+;; countries.at(index)

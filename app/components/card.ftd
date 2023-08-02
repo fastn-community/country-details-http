@@ -1,5 +1,6 @@
 -- import: fastn-country-code-example/app/models/country as Country
 -- import: fastn-country-code-example/app/styles/shadow as Shadow
+-- import: fastn-country-code-example/app/utils as Utility
 
 -- component CountryCard:
 caption Country.Country country:
@@ -11,6 +12,7 @@ shadow: $Shadow.card-shadow
 overflow: auto
 border-radius.rem: 0.5
 margin.rem: 2
+$on-click$: $Utility.open-country-page(country = $CountryCard.country.cca2)
 
 -- ftd.image:
 src: $CountryCard.country.flags.svg

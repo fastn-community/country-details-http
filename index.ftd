@@ -1,7 +1,7 @@
--- import: fastn-country-code-example/app/pages/home as Home
+-- import: fastn-country-code-example/app/pages/home
 
 -- ftd.document: Where in the world?
 
--- Home.Home:
+-- home.page:
 
 -- end: ftd.document

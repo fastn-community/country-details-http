@@ -1,3 +1,9 @@
 -- import: fastn
 
 -- fastn.package: fastn-country-code-example
+
+-- fastn.dynamic-urls:
+
+# Country Details Page
+  url: /country/<string:cca2>/
+  document: app/pages/details.ftd

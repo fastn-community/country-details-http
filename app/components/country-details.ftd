@@ -1,8 +1,46 @@
 -- import: fastn-country-code-example/app/models/country as country-models
+-- import: fastn-country-code-example/app/utils as utility
+
+-- component country-detail:
+caption string label:
+string value:
+
+-- ftd.text: $utility.format-label(a = $country-detail.label, b = $country-detail.value)
+
+-- end: country-detail
 
 -- component country-details:
 caption country-models.Country country:
 
+-- ftd.row:
+wrap: true
+spacing.fixed.rem: 4
+margin.rem: 2
+padding.rem: 2
+border-radius.rem: 2
+
+-- ftd.image:
+src: $country-details.country.flags.svg
+width.fixed.calc: calc(50% - 4rem)
+
+-- ftd.column:
+width.fixed.percent: 50
+spacing.fixed.rem: 1
+
 -- ftd.text: $country-details.country.name.official
+style: bold
+role: $inherited.types.heading-small
+
+-- ftd.column:
+spacing.fixed.rem: 0.25
+
+-- country-detail: Population
+value: $utility.int-to-str(a = $country-details.country.population)
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
 
 -- end: country-details

@@ -6,6 +6,17 @@ string b:
 
 a + b
 
+-- string format-label(a,b):
+string a:
+string b:
+
+a + ": " + b
+
+-- string int-to-str(a):
+integer a:
+
+"" + a
+
 -- void open-country-page(country):
 string country:
 

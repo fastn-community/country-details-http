@@ -34,7 +34,7 @@ overflow-y: auto
 
 -- ftd.row:
 wrap: true
-spacing.fixed.rem: 2
+spacing: space-around
 padding.rem: 2
 border-radius.rem: 1
 

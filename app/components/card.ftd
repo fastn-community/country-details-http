@@ -1,0 +1,77 @@
+-- import: fastn-country-code-example/app/models/country as Country
+-- import: fastn-country-code-example/app/styles/shadow as Shadow
+
+-- component CountryCard:
+caption Country.Country country:
+
+-- ftd.column:
+width.fixed.px: 260
+height.fixed.px: 320
+shadow: $Shadow.card-shadow
+overflow: auto
+border-radius.rem: 0.5
+
+-- ftd.image:
+src: $CountryCard.country.flags.svg
+width: fill-container
+height.fixed.percent: 50
+
+-- ftd.column:
+padding.rem: 1
+spacing.fixed.rem: 0.5
+
+-- ftd.text: $CountryCard.country.name.official
+style: bold
+role: $inherited.types.copy-regular
+
+-- ftd.column:
+spacing.fixed.rem: 0.25
+
+-- ftd.row:
+align-content: center
+spacing.fixed.rem: 0.5
+
+-- ftd.text: Population:
+role: $inherited.types.label-large
+style: semi-bold
+
+-- ftd.integer: $CountryCard.country.population
+role: $inherited.types.copy-small
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.rem: 0.5
+
+-- ftd.text: Region:
+role: $inherited.types.label-large
+style: semi-bold
+
+-- ftd.text: $CountryCard.country.region
+role: $inherited.types.copy-small
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.rem: 1
+
+-- ftd.text: Capital:
+style: semi-bold
+role: $inherited.types.label-large
+
+-- ftd.text: $capital-name
+style: bold
+role: $inherited.types.copy-small
+for: $capital-name, $index in $CountryCard.country.capital
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: CountryCard

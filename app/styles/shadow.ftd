@@ -1,0 +1,8 @@
+-- ftd.color shadow-color:
+light: #efefef
+dark: #efefef
+
+-- ftd.shadow card-shadow:
+color: $shadow-color
+blur.px: 5
+spread.rem: 0.2

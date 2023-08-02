@@ -1,0 +1,15 @@
+-- record CountryName:
+string common:
+string official:
+
+-- record CountryFlag:
+string png:
+string svg:
+
+-- record Country:
+CountryName name:
+integer population:
+string list capital:
+string cca2:
+string region:
+CountryFlag flags:

@@ -1,0 +1,50 @@
+-- import: fastn-country-code-example/app/models/country as CountryModels
+-- import: fastn-country-code-example/app/styles/shadow as Shadow
+-- import: fastn-country-code-example/app/components/card as Card
+-- import: fastn/processors as pr
+
+-- CountryModels.Country list countries:
+$processor$: pr.http
+url: https://restcountries.com/v3.1/all
+
+-- component Home:
+
+-- ftd.column:
+background.solid: #fefefe
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+width: fill-container
+padding-vertical.rem: 1
+padding-horizontal.rem: 2
+shadow: $Shadow.card-shadow
+
+-- ftd.text: Where in the world?
+style: bold
+role: $inherited.types.heading-small
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+overflow-y: auto
+
+-- ftd.row:
+wrap: true
+spacing.fixed.rem: 2
+padding.rem: 2
+border-radius.rem: 1
+
+-- Card.CountryCard: $country
+for: $country in $countries
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: Home

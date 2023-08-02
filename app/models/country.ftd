@@ -1,6 +1,13 @@
 -- record CountryName:
 string common:
 string official:
+CountryNativeName nativeName:
+
+-- record CountryNativeNameInEng:
+string common:
+
+-- record CountryNativeName:
+CountryNativeNameInEng eng:
 
 -- record CountryFlag:
 string png:
@@ -12,4 +19,5 @@ integer population:
 string list capital:
 string cca2:
 string region:
+string subregion:
 CountryFlag flags:

@@ -5,7 +5,17 @@
 caption string label:
 string value:
 
--- ftd.text: $utility.format-label(a = $country-detail.label, b = $country-detail.value)
+-- ftd.row:
+spacing.fixed.rem: 0.25
+
+-- ftd.text: $country-detail.label
+style: semi-bold
+role: $inherited.types.label-large
+
+-- ftd.text: $country-detail.value
+role: $inherited.types.label-large
+
+-- end: ftd.row
 
 -- end: country-detail
 
@@ -32,10 +42,23 @@ style: bold
 role: $inherited.types.heading-small
 
 -- ftd.column:
-spacing.fixed.rem: 0.25
+spacing.fixed.rem: 0.5
 
--- country-detail: Population
+-- country-detail: Population:
 value: $utility.int-to-str(a = $country-details.country.population)
+
+-- country-detail: Native Name:
+value: $country-details.country.name.nativeName.eng.common
+
+-- country-detail: Region:
+value: $country-details.country.region
+
+-- country-detail: Sub-region:
+value: $country-details.country.subregion
+
+-- country-detail: Capital:
+value: $capital
+for: $capital in $country-details.country.capital
 
 -- end: ftd.column
 

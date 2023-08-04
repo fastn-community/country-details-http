@@ -1,5 +1,3 @@
--- import: country-details-http/app/pages/home
-
 -- ftd.document: Country Details HTTP Package
 
 -- ftd.text: Country Details HTTP Package

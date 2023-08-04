@@ -2,6 +2,7 @@
 
 -- fastn.package: fastn-community.github.io/country-details-http
 
+-- fastn.dependency: fastn-community.github.io/site-doc
 
 -- fastn.dependency: fastn-community.github.io/code-block as cb
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs as cs

@@ -1,4 +1,4 @@
--- import: country-details-http/app/models/country as country-models
+-- import: fastn-community.github.io/country-details-http as country-models
 
 ;; ---- Joins two strings
 
@@ -7,14 +7,6 @@ string a:
 string b:
 
 a + b
-
-;; ---- Formats a label string
-
--- string format-label(a,b):
-string a:
-string b:
-
-a + ": " + b
 
 ;; ---- Hack to convert an integer into string
 ;; ---- TODO: Replace it with an internal function

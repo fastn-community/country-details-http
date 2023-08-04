@@ -1,11 +1,30 @@
 -- import: fastn
 
--- fastn.package: country-details-http
+-- fastn.package: fastn-community.github.io/country-details-http
 
-;; ---- Dynamic url for the country details page
 
--- fastn.dynamic-urls:
+-- fastn.dependency: fastn-community.github.io/code-block as cb
+-- fastn.dependency: fastn-community.github.io/dark-flame-cs as cs
+-- fastn.dependency: fastn-community.github.io/opensans-typography as typo
+-- fastn.dependency: fastn-community.github.io/pretty-ws
+-- fastn.dependency: fastn-community.github.io/winter-cs
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher as dms
 
-# Country Details Page
-  url: /country/<string:cca2>/
-  document: app/pages/details.ftd
+-- fastn.auto-import: fastn
+-- fastn.auto-import: cb
+-- fastn.auto-import: cs
+-- fastn.auto-import: typo
+-- fastn.auto-import: dms
+
+
+
+
+
+
+
+-- fastn.sitemap:
+
+# Home: index.html
+
+- Site Doc: index.html
+- Component Doc: /component-doc/
